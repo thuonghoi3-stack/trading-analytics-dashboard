@@ -1,5 +1,4 @@
 import { ALTS_GRID } from "./grid-alts";
-import { COINS } from "./coins";
 import { LEADERS_GRID } from "./grid-leaders";
 
 export type Book = "leaders" | "alts";
@@ -31,7 +30,6 @@ export const GRID: Record<Book, Record<GridSample, GridSlice>> = {
   leaders: LEADERS_GRID,
   alts: ALTS_GRID,
 };
-export { COINS };
 export const SAMPLES: GridSample[] = ["etf", "pre"];
 export const BOOKS: Book[] = ["leaders", "alts"];
 
