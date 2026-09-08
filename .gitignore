@@ -1,0 +1,7 @@
+node_modules/
+.cache/
+dist/
+.output/
+.tanstack/
+*.log
+.DS_Store
