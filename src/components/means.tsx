@@ -1,4 +1,5 @@
-import { COINS, GRID, klassOf, overallMean, type GridSample, type GridSlice } from "@/data/grid";
+import { GRID, klassOf, overallMean, type GridSample, type GridSlice } from "@/data/grid";
+import { COINS } from "@/data/coins";
 import { t } from "@/lib/copy";
 import { DOW, DOW_VI, formatRet, KLASS, type Lang, type Session } from "@/lib/cycles";
 import { cn } from "@/lib/utils";
