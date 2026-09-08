@@ -1,6 +1,8 @@
 # 168 GRID — leaders vs alts, two eras
 
-Interactive 7×24 UTC heatmaps. **Trend leaders** (BTC, ETH, SOL, BNB) and **altcoins** (XRP, ADA, DOGE, AVAX, LINK, DOT, ATOM, LTC, UNI, NEAR) are separate books. Pre-ETF is **not** mixed into Spot ETF.
+Interactive 7×24 UTC heatmaps. **Trend leaders** (BTC, ETH, SOL, BNB) and **altcoins** (XRP, ADA, DOGE, AVAX, LINK, DOT, ATOM, LTC, UNI, NEAR) are separate 168-cell tables. Pre-ETF is **not** mixed into Spot ETF.
+
+Live app source is in this repo. Means are computed from closed Binance spot 1h bars — not guessed.
 
 ## Why the split
 
@@ -13,7 +15,13 @@ Hourly BTC means from 2019–2026 blend a different market into the live number.
 | Pre-ETF | 2021-01-01 → 2024-01-10 | 26,505 |
 | Spot ETF | 2024-01-11 → 2026-08-26 | 23,016 |
 
-Source: Binance spot USDT klines, `data.binance.vision`, 1h. Equal-weight basket return each UTC hour. `scripts/build-grids.py` rebuilds `src/data/grid.ts` from those zips.
+Source: Binance spot USDT klines, `data.binance.vision`, 1h. Equal-weight basket return each UTC hour.
+
+`scripts/build-grids.py` rebuilds:
+
+- `src/data/grid-leaders.ts` — BTC ETH SOL BNB
+- `src/data/grid-alts.ts` — 10 large-cap alts
+- `src/data/coins.ts` — per-symbol Prime means
 
 ## Verified Spot ETF Prime (Tue–Wed × 13–17 UTC)
 
