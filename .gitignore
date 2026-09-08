@@ -1,7 +1,7 @@
-node_modules/
-.cache/
-dist/
-.output/
-.tanstack/
+node_modules
+.output
+.vercel
+dist
+.cache
+.env
 *.log
-.DS_Store

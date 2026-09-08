@@ -36,6 +36,10 @@ BTC is the only leader still green in Prime after the ETF (**+0.008%**). ETH −
 
 Hourly edge is smaller than taker fees. This is a calendar map, not a trade signal.
 
+## Deploy on Vercel
+
+Import this repo. Framework preset: **TanStack Start**. Build command `vite build` is detected from `package.json`. Then Redeploy.
+
 ## Rebuild
 
 ```bash
